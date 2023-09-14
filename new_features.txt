@@ -1,1 +1,2 @@
-No new features will be created.
+Resolving conflicts. 
+This file has some new features on the main branch.
