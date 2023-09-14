@@ -1,0 +1,302 @@
+   33  curl -0 https://raw.githubusercontent.com/Homebrew/install/master/install.sh
+   38  curl -0 https://raw.githubusercontent.com/Homebrew/install/master/install.sh
+   40  curl -O https://raw.githubusercontent.com/Homebrew/install/master/install.sh
+   44  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+   45  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   52  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”\nbrew install name\nbrew install name 
+   54  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”\nbrew install name\nbrew install name 
+   55  “ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
+   57  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  259  git --version
+  260  $ brew install git-gui
+  261  brew install git
+  262  git clone https://github.com/git/git
+  263  git --version
+  264  brew install git
+  265  git --version
+  266  git config --global use.name "Mary Nydegger\n"
+  267  git config --global use.name "Mary Nydegger"
+  268  git config --global user.email "menydegger@gmail.com"
+  269  git config --global core.editor "core --wait"
+  270  git config --global core.editor "code --wait"
+  271  git config --global init.defaultBrach main
+  286  git config --global user.name "Mary Nydegger"
+  287  git config --gloal user.name "menydegger@gmail.com"
+  288  git config --global user.name "menydegger@gmail.com"
+  289  git config --list
+  290  git config --global user.name "Mary Nydegger"
+  291  git config --global user.email "menydegger@gmail.com"
+  292  git config --global init.defaultBranch main
+  293  git config --list
+  294  git config --rm use.name
+  295  git config --list
+  296  git branch
+  304  mkdir git_practice
+  305  cd git_practice
+  308  git status
+  309  git init
+  310  git status
+  312  rm -rf.git
+  313  rm -rf .git
+  314  git status
+  317  git status
+  320  git init
+  323  git status
+  324  git add file_1.txt
+  325  git status
+  326  git commit  -m 'create file_1.txt'
+  327  git status
+  328  git log
+  330  git status
+  332  git status
+  333  git add file_2.txt
+  334  git status
+  335  git commit -m 'Edit text files'
+  336  git status
+  337  git log
+  338  git log --oneline
+  341  git status
+  344  cd git_practice
+  346  git status
+  347  git log
+  355  cd git_practice
+  357  git status
+  359  git status
+  360  git commit file_1.txt
+  361  git add file_1.txt
+  362  git commit -m "Committing changes from file_1.txt"
+  363  git status
+  364  git log
+  365  git add file_2.txt
+  366  git commit -m "Committing changes from file_2.txt"
+  367  git status
+  368  git log
+  381  cd Documents/FALL2023/STAT386/git_practice
+  385  git add Readme.md
+  386  git commit -m "Add Readme.md with repository description."
+  387  git status
+  388  git log
+  395  cd git_practice
+  397  echo "api-keys.txt" > .gitignore
+  399  git add .gitignore
+  400  git commit -m "Add .gitignore file to ignore api-keys.txt"
+  401  git status
+  405  git status
+  407  git status
+  408  git log
+  409  cd Documents/FALL2023/STAT386/git_practice
+  411  git add api-keys.txt
+  414  echo "api-keys.txt" > .gitignore
+  415  git add .gitignore
+  416  git commit -m "Add .gitignore file to ignore api-keys.txt"
+  418  git status
+  419  git rm --cached api-keys.txt
+  422  cd Documents/FALL2023/STAT386/git_practice
+  424  tough .gitignore
+  425  touch .gitignore
+  427  nano .gitignore
+  428  git add .gitignore
+  429  git commit -m "Add .gitignore file"
+  431  git status
+  433  git status
+  435  git branch features 
+  436  git checkout features
+  437  git checkout -b features 
+  438  git log
+  439  cd Documents/FALL2023/STAT386/git_practice
+  441  git checkout -b features
+  442  git checkout features
+  443  git log --oneline --graph --all
+  446  git add new_features.txt
+  447  git commit -m "Add empty file"
+  449  git add new_features.txt
+  450  git commit -m "Add new features content"
+  451  git status
+  452  git log
+  455  mkdir git_practice_
+  456  cd git_practice_
+  457  git init
+  459  git status
+  462  git status
+  463  git add file_1.txt file_2.txt
+  464  git status
+  465  git commit -m "create new files"
+  466  git status
+  470  git status
+  471  git add file_1.txt
+  472  git commit -m "Add content to file_1.txt"
+  473  git add file_2.txt
+  474  git commit -m "Add content to file_2.txt"
+  477  git add Readme.md
+  478  git commit -m "Add Readme.md"
+  479  echo "api-keys.txt" > .gitignore
+  480  git add .gitignore
+  481  git commit -m "Add .gitignore file"
+  482  git branch features
+  483  git checkout features
+  484  git log --oneline --graph --all
+  486  git add new_features.txt
+  487  git commit -m "Add empty file"
+  489  git add new_features.txt
+  490  git commit -m "Add new features content"
+  491  git checkout main
+  494  git add file_1.txt
+  495  git commit -m "Add an additional line to file_1.txt"
+  496  git merge features
+  497  git commit -m "Merging"
+  500  git add new_features.txt
+  501  git commit -m "Update new_features.txt on main branch"
+  502  git checkout features
+  504  git add new_features.txt
+  505  git commit -m "Update new_features.txt on features branch"
+  506  git checkout main
+  507  git merge features
+  509  git add new_features.txt
+  510  git commit -m "Resolve merge conflict in new_features.txt"
+  511  git merge --continue
+  512  git branch -d features
+  513  git remote add origin git@github.com:MaryNydegger/git-practice-marynyde.git
+  514  git push -u origin main
+  515  git log --oneline > gitlog.txt
+  516  history 0 | grep git > history.txt
+  517  git add gitlog.txt history.txt
+  518  git commit -m "Add girlog.txt and history.txt for submission"
+  519  git push origin main
+  521  cd Documents/FALL2023/STAT386/git_practice
+  523  git checkout features
+  524  git checkout main
+  526  git add file_1.txt
+  528  git commit -m "Add another line of text to file_1.txt"
+  529  git merge features
+  530  git commit
+  531  git commit -m "Merging"
+  532  git log --oneline --graph --all
+  533  git add new_features.txt
+  534  git commit -m "Update new_features.txt on main branch"
+  535  git checkout features
+  537  git add new_features.txt
+  538  git commit -m
+  539  git commit -m "Update new_features.txt on features branch"
+  540  git checkout main
+  541  git merge features
+  542  git commit
+  543  git commit -m "Merging again"
+  544  git add new_features.txt
+  545  git commit -m "Resolve merge conflict in new_features.txt"
+  546  git branch -d features
+  548  git remote add origin git@github.com:MaryNydegger/git-practice_MaryNydegger.git
+  549  git push -u origin main
+  550  git clone git@github.com:MaryNydegger/justinpferdner.git
+  553  git checkout -b feature-marynyde
+  554  git add .
+  555  git commit -m "adding"
+  556  git push origin feature-marynyde
+  557  rm -rd Documents/FALL2023/STAT386/git_practice/justinpferdner
+  562  git log --oneline >gitlog.txt
+  563  history | grep git > history.txt
+  564  history 0 | grep git > hiistory.txt
+  565  git add gitlog.txt history.txt
+  566  git commit -m "Add gitlog.txt and history.txt"
+  567  git push origin main
+  570  cd Documents/FALL2023/STAT386/git_practice_
+  576  git clone git@github.com:MaryNydegger/git-practice-justinpferdner.git
+  578  cd git-practice-justinpferdner
+  579  git switch -b feature-MaryNydegger
+  581  git add another_file.txt
+  584  git add another_file.txt
+  585  git commit -m "Added another file"
+  586  git push origin feature-MaryNydegger
+  588  git rm another_file.txt
+  590  git switch -c feature-MaryNydegger
+  593  git add another_file.txt
+  594  git commit -m "Added another file"
+  595  git push origin feature-MaryNydegger
+  602  cd git_practice_
+  603  git switch -c features
+  604  git log --oneline --graph --all --decorate
+  607  git add new_features.txt
+  608  git commit -m "add empty file"
+  614  git status
+  615  git commit -m "create new files"
+  616  git status
+  619  git status
+  620  git add file_1.txt
+  621  git commit -m "Add changes to file_1.txt"
+  622  git add file_2.txt
+  623  git commit -m "Add changes to file_2.txt"
+  625  git add Readme.md
+  626  git commit -m "Add Readme.md"
+  627  touch .gitignore
+  628  nano .gitignore
+  629  git add .gitignore
+  630  git commit -m "Add .gitignore"
+  631  git switch -c features
+  632  git log --oneline --graph --all --decorate
+  635  rm git_practice
+  636  rm -rf git_practice
+  638  mkdir git_practice
+  640  cd git_practice
+  641  git init
+  643  git status
+  646  git status
+  647  git commit -m "Create new files"
+  648  git status
+  651  git status
+  652  git add file_1.txt
+  653  git commit -m "Add changes to file_1.txt"
+  654  git add file_2.txt
+  655  git commit -m "Add changes to file_2.txt"
+  657  git add Readme.md
+  658  git commit -m "Add Readme.md\n"
+  659  touch .gitignore
+  660  nano .gitignore
+  661  git add .gitignore
+  662  git commit -m "Add .gitignore"
+  663  git switch -c features
+  664  git log --oneline --graph --all --decorate
+  666  git add new_features.txt
+  667  git commit -m "add empty file"
+  669  git add new_features.txt
+  670  git commit -m "Add new features content"
+  671  git switch main 
+  672  git add file_1.txt
+  673  git commit -m "Update file_1.txt"
+  674  git merge features
+  676  git add file_1.txt
+  677  git commit -m "Update file_1.txt"
+  678  git merge features
+  679  git log --oneline --graph --all --decorate
+  682  git add new_features.txt
+  683  git commit -m "Update new_features.txt on main branch"
+  684  git switch features
+  686  git add new_features.txt
+  687  git commit -m "Update new_features.txt on features branch"
+  688  git switch main
+  689  git merge features
+  691  git add new_features.txt
+  692  git commit -m "Resolved merge conflict in new_features.txt"
+  694  git branch -d features
+  695  git remote add origin git@github.com:MaryNydegger/git-practice-MaryNydegger.git
+  696  git push -u origin main
+  699  cd git_practice_
+  703  cd git_practice
+  704  git log --oneline > gitlog.txt
+  705  history 0 | grep git > history.txt
+  708  rm gitlog.txt
+  711  git clone git@github.com:MaryNydegger/git-practice-justinpferdner.git\n
+  713  cd git-practice-justinpferdner
+  714  git switch -c feature-MaryNydegger
+  718  git add another_file.txt
+  719  git commit -m "Adding another file to Justin's repository"
+  720  git push origin feature-MaryNydegger
+  721  git log --oneline > gitlog.txt
+  722  git log --oneline --graph --all --decorate
+  723  git push origin feature-MaryNydegger
+  724  git switch feature-MaryNydegger
+  725  git pull origin feature-MaryNydegger
+  726  git commit
+  729  git add another_file.txt
+  730  git commit
+  731  git push origin feature-MaryNydegger
+  732  git pull
+  734  git log --oneline > gitlog.txt
